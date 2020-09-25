@@ -1,5 +1,5 @@
 CREATE DATABASE libros;
 
-CREATE TABLE autor(
-    
+CREATE TABLE autores(
+
 )
