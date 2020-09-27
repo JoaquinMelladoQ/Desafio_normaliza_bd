@@ -7,6 +7,15 @@ CREATE TABLE libros(
     titulo VARCHAR(50)
 );
 
+CREATE TABLE editoriales_libros(
+    id INT NOT NULL UNIQUE PRIMARY KEY,
+
+);
+
+CREATE TABLE editoriales(
+
+);
+
 CREATE TABLE lectores(
     id INT NOT NULL UNIQUE PRIMARY KEY,
     nombre VARCHAR(50)
@@ -24,13 +33,6 @@ CREATE TABLE prestamos(
 );
 
 
-CREATE TABLE editoriales_libros(
-
-);
-
-CREATE TABLE editoriales(
-
-);
 
 CREATE autores_libros(
 
