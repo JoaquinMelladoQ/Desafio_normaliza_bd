@@ -6,6 +6,11 @@ CREATE TABLE libros(
 
 );
 
+CREATE TABLE editoriales_libros(
+
+);
+
+
 CREATE autores_libros(
 
 );
