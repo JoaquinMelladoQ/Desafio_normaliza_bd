@@ -22,6 +22,10 @@ CREATE TABLE autores(
 
 );
 
-CREATE table lectores(
+CREATE TABLE lectores(
+
+);
+
+CREATE TABLE prestamos(
 
 );
