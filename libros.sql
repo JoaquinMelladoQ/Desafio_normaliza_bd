@@ -8,7 +8,8 @@ CREATE TABLE libros(
 );
 
 CREATE TABLE lectores(
-
+    id INT NOT NULL UNIQUE PRIMARY KEY,
+    nombre VARCHAR(50)
 );
 
 CREATE TABLE prestamos(
