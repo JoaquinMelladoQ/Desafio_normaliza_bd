@@ -3,8 +3,16 @@ CREATE DATABASE libros;
 \c libros;
 
 CREATE TABLE libros(
-    cod_libros INT PRIMARY KEY,
+    id_libros INT PRIMARY KEY,
     titulo VARCHAR(50)
+);
+
+CREATE TABLE prestamos(
+
+);
+
+CREATE TABLE lectores(
+
 );
 
 CREATE TABLE editoriales_libros(
@@ -23,10 +31,3 @@ CREATE TABLE autores(
 
 );
 
-CREATE TABLE lectores(
-
-);
-
-CREATE TABLE prestamos(
-
-);
