@@ -14,9 +14,13 @@ CREATE TABLE lectores(
 
 CREATE TABLE prestamos(
     id INT NOT NULL UNIQUE PRIMARY KEY,
+    fecha_devo DATE NOT NULL,
     libros_id INT,
     FOREIGN KEY (libros_id)
-    REFERENCES libros (id)
+    REFERENCES libros (id),
+    lectores_id INT,
+    FOREIGN KEY (lectores_id)
+    REFERENCES lectores (id)
 );
 
 
