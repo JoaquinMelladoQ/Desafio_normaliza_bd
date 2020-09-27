@@ -13,3 +13,7 @@ CREATE autores_libros(
 CREATE TABLE autores(
 
 );
+
+CREATE table lectores(
+
+);
