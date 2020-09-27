@@ -9,11 +9,17 @@ CREATE TABLE libros(
 
 CREATE TABLE editoriales_libros(
     id INT NOT NULL UNIQUE PRIMARY KEY,
-
+    libros_id INT NOT NULL,
+    FOREIGN KEY (libros_id)
+    REFERENCES libros (id),
+    editoriales_id INT NOT NULL,
+    FOREIGN KEY (editoriales_id)
+    REFERENCES editoriales (id)
 );
 
 CREATE TABLE editoriales(
-
+    id INT NOT NULL UNIQUE PRIMARY KEY,
+    nombre VARCHAR(50)
 );
 
 CREATE TABLE lectores(
@@ -24,10 +30,10 @@ CREATE TABLE lectores(
 CREATE TABLE prestamos(
     id INT NOT NULL UNIQUE PRIMARY KEY,
     fecha_devo DATE NOT NULL,
-    libros_id INT,
+    libros_id INT NOT NULL,
     FOREIGN KEY (libros_id)
     REFERENCES libros (id),
-    lectores_id INT,
+    lectores_id INT NOT NULL,
     FOREIGN KEY (lectores_id)
     REFERENCES lectores (id)
 );
