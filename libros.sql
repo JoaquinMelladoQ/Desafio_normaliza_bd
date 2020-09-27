@@ -8,7 +8,6 @@ CREATE TABLE libros(
 );
 
 CREATE TABLE editoriales_libros(
-    id INT NOT NULL UNIQUE PRIMARY KEY,
     libros_id INT NOT NULL,
     FOREIGN KEY (libros_id)
     REFERENCES libros (id),
@@ -39,12 +38,11 @@ CREATE TABLE prestamos(
 );
 
 
+CREATE TABLE autores(
+    id INT NOT NULL UNIQUE PRIMARY KEY,
+    nombre VARCHAR(50)
+);
 
 CREATE autores_libros(
 
 );
-
-CREATE TABLE autores(
-
-);
-
