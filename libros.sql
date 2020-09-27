@@ -44,5 +44,10 @@ CREATE TABLE autores(
 );
 
 CREATE autores_libros(
-
+    autores_id INT NOT NULL,
+    FOREIGN KEY (autores_id)
+    REFERENCES autores (id),
+    libros_id INT NOT NULL,
+    FOREIGN KEY (libros_id)
+    REFERENCES libros (id)
 );
